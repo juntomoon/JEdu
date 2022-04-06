@@ -14,7 +14,7 @@ class GalTOLitTable {
             metr = duym * 0.3937f;
             System.out.println(metr + " м = " + duym + " дюйм");
             ++counter;
-            if (counter == 12) {
+            if (counter == 10) {
                 System.out.println();
                 counter = 0;
             }
