@@ -2,7 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/CastDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Guess.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Inch.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/KbIn.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Ladder.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ModDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Sound.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/StrDemo.java" charset="windows-1251" />
