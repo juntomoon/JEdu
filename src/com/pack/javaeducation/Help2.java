@@ -1,7 +1,7 @@
 /*
-РЈРїСЂР°Р¶РЅРµРЅРёРµ 3.2
-Р Р°СЃС€РёСЂРµРЅРЅР°СЏ СЃРїСЂР°РІРѕС‡РЅР°СЏ СЃРёСЃС‚РµРјР°, РІ РєРѕС‚РѕСЂРѕР№ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё
-СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІС‹Р±РѕСЂР° РёР· РјРµРЅСЋ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ С†РёРєР» do-while.
+Упражнение 3.2
+Расширенная справочная система, в которой для обработки
+результатов выбора из меню используется цикл do-while.
 */
 package com.pack.javaeducation;
 
@@ -12,14 +12,16 @@ class Help2 {
 
         char choice, ignore;
         do {
-            System.out.println("РЎРїСЂР°РІРєР°:");
+            System.out.println("Справка:");
             System.out.println(" 1.if");
             System.out.println(" 2.switch");
             System.out.println(" 3.for");
             System.out.println(" 4.while");
             System.out.println(" 5.do-while\n");
-            System.out.print("Р’С‹Р±РµСЂРёС‚Рµ: ");
+            System.out.print("Выберите: ");
+
             choice = (char) System.in.read();
+
             do {
                 ignore = (char) System.in.read();
             } while (ignore != '\n');
@@ -27,33 +29,33 @@ class Help2 {
         System.out.println("\n");
         switch (choice) {
             case '1':
-                System.out.println("РРЅСЃС‚СЂСѓРєС†РёСЏ if : \n ");
-                System.out.println(" if (СѓСЃР»РѕРІРёРµ) РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
-                System.out.println("else РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
+                System.out.println("Инструкция if : \n ");
+                System.out.println(" if (условие) инструкция;");
+                System.out.println("else инструкция;");
                 break;
             case '2':
-                System.out.println("РРЅСЃС‚СЂСѓРєС†РёСЏ switch:\n");
-                System.out.println("switch(РІС‹СЂР°Р¶РµРЅРёРµ) {");
-                System.out.println(" case РєРѕРЅСЃС‚Р°РЅС‚Р°:");
-                System.out.println(" РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РёРЅСЃС‚СЂСѓРєС†РёР№");
+                System.out.println("Инструкция switch:\n");
+                System.out.println("switch(выражение) {");
+                System.out.println(" case константа:");
+                System.out.println(" последовательность инструкций");
                 System.out.println(" break;");
                 System.out.println(" // ...");
                 System.out.println("}");
                 break;
             case '3':
-                System.out.println("Р¦РёРєР» for:\n");
-                System.out.print("for(РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ; СѓСЃР»РѕРІРёРµ; РёС‚РµСЂР°С†РёСЏ)");
-                System.out.println(" РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
+                System.out.println("Цикл for:\n");
+                System.out.print("for(инициализация; условие; итерация)");
+                System.out.println(" инструкция;");
                 break;
             case '4':
-                System.out.println("Р¦РёРєР» while:\n");
-                System.out.println("while(СѓСЃР»РѕРІРёРµ) РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
+                System.out.println("Цикл while:\n");
+                System.out.println("while(условие) инструкция;");
                 break;
             case '5':
-                System.out.println("Р¦РёРєР» do-while:\n");
+                System.out.println("Цикл do-while:\n");
                 System.out.println("do {");
-                System.out.println(" РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
-                System.out.println("} while (СѓСЃР»РѕРІРёРµ);");
+                System.out.println(" инструкция;");
+                System.out.println("} while (условие);");
                 break;
         }
     }
