@@ -1,47 +1,34 @@
 package com.pack.javaeducation;
-/*  Р”РѕР±Р°РІР»РµРЅРёРµ РїР°СЂР°РјРµС‚СЂРёР·РёСЂРѕРІР°РЅРЅРѕРіРѕ РјРµС‚РѕРґРѕ fuelneeded РІ РєРѕС‚РѕСЂРѕРј РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ
-    СЂР°СЃС‡РµС‚ РѕР±СЉРµРјР° С‚РѕРїР»РёРІР°, РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРјСѓ СЃСЂРµРґСЃС‚РІСѓ
-    РґР»СЏ  РїСЂРµРѕРґРѕР»РµРЅРёСЏ Р·Р°РґР°РЅРЅРѕРіРѕ СЂР°СЃСЃС‚РѕСЏРЅРёСЏ
- */
 
+// В этой программе создается 2 объекта класса vehicle
 class Vehicle {
-    int passengers;     // РљРѕР»РёС‡РµСЃС‚РІРѕ РїР°СЃСЃР°Р¶РёСЂРѕРІ
-    int fuelcap;        // Р•РјРєРѕСЃС‚СЊ С‚РѕРїР»РёРІРЅРѕРіРѕ Р±Р°РєР°
-    int mpg;            //РїРѕС‚СЂРµР±Р»РµРЅРёСЏ С‚РѕРїР»РёРІР° РІ РјРёР»СЏС… РЅР° РіР°Р»Р»РѕРЅ
+    int passengers; // количество пассажиров
+    int fuelcap;   // емкость топливного бака
+    int mpg;        // потребление топлива в милях на галлон
+}
+// В этом классе объявляется объект типа Vehicle
+class TwoVehicles {
+    public static void main(String[] args) {
+        Vehicle minivan = new Vehicle();
+        Vehicle sportscar = new Vehicle();
 
-    //Р­С‚Рѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Vehicle
-    Vehicle(int p, int f, int m) {
-        passengers = p;
-        fuelcap = f;
-        mpg = m;
-    }
+        int range1, range2;
 
-    // РћРїСЂРµРґРµР»РµРЅРёСЏ РґР°Р»СЊРЅРѕСЃС‚Рё РїРѕРµР·РґРєРё С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ СЃСЂРµРґСЃС‚РІР°
-    int range() {
-        return mpg * fuelcap;
-    }
+        // Присваивание значений полям в объекте minivan
+        minivan.passengers = 7;
+        minivan.fuelcap = 16;
+        minivan.mpg = 21;
 
-    // Р Р°СЃС‡РµС‚ РѕР±СЉРµРјР° С‚РѕРїР»РёРІР°, РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРјСѓ
-    // СЃСЂРµРґСЃС‚РІСѓ РґР»СЏ РїСЂРµРѕРґРѕР»РµРЅРёСЏ Р·Р°РґР°РЅРЅРѕРіРѕ СЂР°СЃСЃС‚РѕСЏРЅРёСЏ
-    double fuelneeded(int miles) {
-        return (double) miles / mpg;
+        // Присваивание значений полям объекта sportcar
+        sportscar.passengers = 2;
+        sportscar.fuelcap = 14;
+        sportscar.mpg = 12;
+
+        // Расчет дальности поездки с полным баком горючего
+        range1 = minivan.fuelcap * minivan.mpg;
+        range2 = sportscar.fuelcap * sportscar.mpg;
+
+        System.out.println("Мини-фургон может перевезти " + minivan.passengers + " пассажиров на расстояние " + range1 + " миль");
+        System.out.println("Спортивный автомобиль может перевети " + sportscar.passengers + " пассажиров на расстояние " + range2 + " миль");
     }
 }
-
-    class VehConsDemo {
-        public static void main(String[] args) {
-
-            // Р—Р°РІРµСЂС€РµРЅРёРµ СЃРѕР·РґР°РЅРёСЏ РѕР±СЉРµРєС‚РѕРІ С‚СЂР°РЅСЃРїРѕСЂС‚РЅС‹С… СЃСЂРµРґСЃС‚РІ
-            Vehicle minivan = new Vehicle(7, 16, 21);
-            Vehicle sportscar = new Vehicle(2, 14, 12);
-            double gallons;
-            int dist = 252;
-
-            gallons = minivan.fuelneeded(dist);
-            System.out.println("Р”Р»СЏ РїСЂРµРѕРґРѕР»РµРЅРёСЏ " + dist + " РјРёР»СЊ, РјРёРЅРё-С„СѓСЂРіРѕРЅСѓ С‚СЂРµР±СѓРµС‚СЃСЏ " + gallons + " РіР°Р»Р»РѕРЅРѕРІ С‚РѕРїР»РёРІР°");
-
-            gallons = sportscar.fuelneeded(dist);
-            System.out.println("Р”Р»СЏ РїСЂРµРѕРґРѕР»РµРЅРёСЏ " + dist + " РјРёР»СЊ, СЃРїРѕСЂС‚РёРІРЅРѕРјСѓ Р°РІС‚РѕРјРѕР±РёР»СЋ С‚СЂРµР±СѓРµС‚СЃСЏ " + gallons + " РіР°Р»Р»РѕРЅРѕРІ С‚РѕРїР»РёРІР°");
-
-        }
-    }
