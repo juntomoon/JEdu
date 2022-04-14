@@ -7,9 +7,10 @@ public class ArrayDemo {
 
         for (i = 0; i < 10; i++)
             sample[i] = i;
-
         for (i = 0; i < 10; i++)
-            System.out.println("Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ [" + i + "] : " + sample[i] );
+        System.out.println("Ýëåìåíò [" + i + "] : " + sample[i] );
+
+
 
     }
 
