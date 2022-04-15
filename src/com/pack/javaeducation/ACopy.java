@@ -10,12 +10,12 @@ public class ACopy {
         for(i=0; i < nums1.length; i++)
             nums1[i] = i;
 
-        // ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° nums1 Ð² Ð¼Ð°ÑÑÐ¸Ð² nums2
+        // Êîïèðîâàíèå ìàññèâà nums1 â ìàññèâ nums2
         if(nums2.length >= nums1.length)
             for (i=0; i < nums2.length; i++)
                 nums2[i] = nums1[i];
             for(i=0; i < nums2.length; i++)
-                System.out.println(nums2[i] + "  ");
+                System.out.print(nums2[i] + "  ");
     }
 
 }
