@@ -1,13 +1,13 @@
 package com.pack.javaeducation;
-//РџРѕРёСЃРє РІ РјР°СЃСЃРёРІРµ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј СЂР°СЃС€РёСЂРµРЅРЅРѕРіРѕ С†РёРєР»Р° for
+//Поиск в массиве с использованием расширенного цикла for
 public class Search {
     public static void main(String[] args) {
         int[] nums = {6, 8, 3, 7, 5, 6, 1, 4};
         int val = 5;
         boolean found = false;
 
-        // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С†РёРєР»Р° С‚РёРїР° for-eadch РґР»СЏ РїРѕРёСЃРєР°
-        //Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅРѕР№ val РІ РјР°СЃСЃРёРІРµ nums
+        // Использование цикла типа for-eadch для поиска
+        //значения переменной val в массиве nums
         for (int x : nums) {
             if (x == val) {
                 found = true;
@@ -15,6 +15,6 @@ public class Search {
             }
         }
         if (found)
-            System.out.println("Р—РЅР°С‡РµРЅРёРµ РЅР°Р№РґРµРЅРѕ!");
+            System.out.println("Значение найдено!");
     }
 }

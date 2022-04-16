@@ -2,12 +2,12 @@ package com.pack.javaeducation;
 
 class Substr {
     public static void main(String[] args) {
-        String orgstr = "Java - РґРІРёРіР°С‚РµР»СЊ РРЅС‚РµСЂРЅРµС‚Р°.";
+        String orgstr = "Java - двигатель Интернета.";
 
-        //РЎС„РѕРјРёСЂРѕРІР°С‚СЊ РїРѕРґСЃС‚СЂРѕРєСѓ
+        //Сфомировать подстроку
         String substr = orgstr.substring(7, 26);
 
-        System.out.println("orgstr:" + orgstr);
-        System.out.println("substr:" + substr);
+        System.out.println("orgstr: " + orgstr);
+        System.out.println("substr: " + substr);
     }
 }

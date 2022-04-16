@@ -1,23 +1,24 @@
 package com.pack.javaeducation;
-
-public class ForEach2 {
+// Использование расширенного цикла for
+// для обработки двумерного массива
+class ForEach2 {
     public static void main(String[] args) {
         int sum = 0;
         int[][] nums = new int[3][5];
 
-        //Р’РІРѕРґ СЂСЏРґР° Р·РЅР°С‡РµРЅРёР№ РІ РјР°СЃСЃРёРІ nums
+        //Ввод ряда значений в массив nums
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 5; j++)
                 nums[i][j] = (i + 1) * (j + 1);
 
-        //РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С†РёРєР»Р° С‚РёРїР° for-each РґР»СЏ
-        //СЃСѓРјРјРёСЂРѕРІР°РЅРёСЏ Рё РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№.
+        //Использование цикла типа for-each для
+        //суммирования и отображения значений.
         for (int x[] : nums) {
             for (int y : x) {
-                System.out.println("Р—РЅР°С‡РµРЅРёРµ: " + y);
+                System.out.println("Значение: " + y);
                 sum += y;
             }
         }
-        System.out.println("РЎСѓРјРјР°: " + sum);
+        System.out.println("Сумма: " + sum);
     }
 }

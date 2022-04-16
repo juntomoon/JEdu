@@ -2,9 +2,9 @@ package com.pack.javaeducation;
 
 public class StringDemo {
     public static void main(String[] args) {
-        // Р Р°Р·Р»РёС‡РЅС‹Рµ СЃРїРѕСЃРѕР±С‹ РѕР±СЉСЏРІР»РµРЅРёСЏ СЃС‚СЂРѕРє
-        String str1 = new String("Р’ Java СЃС‚СЂРѕРєРё - Р­С‚Рѕ РѕР±СЉРµРєС‚С‹");
-        String str2 = "РС… РјРѕР¶РЅРѕ СЃРѕР·РґР°РІР°С‚СЊ СЂР°Р·РЅС‹РјРё СЃРїРѕСЃРѕР±Р°РјРё";
+        // Различные способы объявления строк
+        String str1 = new String("В Java строки - Это объекты");
+        String str2 = "Их можно создавать разными способами";
         String str3 = new String(str2);
 
         System.out.println(str1);

@@ -1,20 +1,20 @@
 package com.pack.javaeducation;
-// Р”РµРјРѕСЃС‚СЂР°С†РёСЏ РёСЃРїРѕР»СЊР·РІР°РЅРёСЏ РјР°СЃСЃРёРІРѕРІ СЃС‚СЂРѕРє
+// Демострация использвания массивов строк
 public class StringArrays {
     public static void main(String[] args) {
-    String[] strs = { "Р­С‚Р°", "СЃС‚СЂРѕРєР°", "СЏРІР»СЏРµС‚СЃСЏ", "С‚РµСЃС‚РѕРј"};
+    String[] strs = { "Эта", "строка", "является", "тестом"};
 
-    System.out.println("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: ");
+    System.out.println("Исходный массив: ");
 
     for(String s : strs)
         System.out.print(s + " ");
     System.out.println("\n");
 
-        // РР·РјРµРЅРµРЅРёРµ СЃС‚СЂРѕРєРё
-        strs[2] = "С‚Р°РєР¶Рµ СЏРІР»СЏРµС‚СЃСЏ";
-        strs[3] = "С‚РµСЃС‚РѕРј";
+        // Изменение строки
+        strs[2] = "также является";
+        strs[3] = "тестом";
 
-        System.out.println("РР·РјРµРЅРµРЅРЅС‹Р№ РјР°СЃСЃРёРІ: ");
+        System.out.println("Измененный массив: ");
         for(String s : strs)
             System.out.print(s + " ");
           }

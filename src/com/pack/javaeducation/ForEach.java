@@ -5,12 +5,12 @@ public class ForEach {
         int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int sum = 0;
 
-        //РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С†РёРєР»Р° for-each РґР»СЏ
-        //СЃСѓРјРјРёСЂРѕРІР°РЅРёСЏ Рё РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№
+        //Использование цикла for-each для
+        //суммирования и отображения значений
         for (int x: nums) {
-            System.out.println("Р—РЅР°С‡РµРЅРёРµ: " + x);
+            System.out.println("Значение: " + x);
             sum += x;
         }
-        System.out.println("РЎСѓРјРјР°: " + sum);
+        System.out.println("Сумма: " + sum);
     }
 }
