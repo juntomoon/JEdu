@@ -1,7 +1,7 @@
 package com.pack.javaeducation;
 class Test {
-    // Р­С‚РѕС‚ РјРµС‚РѕРґ РЅРµ РјРѕР¶РµС‚ РёР·РјРµРЅРёС‚СЊ Р·РЅР°С‡РµРЅРёСЏ Р°СЂРіСѓРјРµРЅС‚РѕРІ,
-    // РїРµСЂРµРґР°РІР°РµРјС‹С… РµРјСѓ РїСЂРё РІС‹Р·РѕРІРµ
+    // Этот метод не может изменить значения аргументов,
+    // передаваемых ему при вызове
     void noChange (int i, int j) {
         i = i + j;
         j = -j;
@@ -13,10 +13,10 @@ public class CallByValue {
         Test ob = new Test();
 
         int a = 15, b = 20;
-        System.out.println("a Рё b РїРµСЂРµРґ РІС‹Р·РѕРІРѕРј: " + a + " " + b);
+        System.out.println("a и b перед вызовом: " + a + " " + b);
 
         ob.noChange(a, b);
 
-        System.out.println("a Рё b РїРѕСЃР»Рµ РІС‹Р·РѕРІР°: " + a + " " + b);
+        System.out.println("a и b после вызова: " + a + " " + b);
     }
 }

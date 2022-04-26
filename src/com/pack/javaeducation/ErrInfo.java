@@ -1,8 +1,8 @@
 package com.pack.javaeducation;
-// Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ð¾Ð±ÑŠÐµÐºÑ‚Ð°, Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼Ð¾Ð³Ð¾ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹
+// Âîçâðàò îáúåêòà, îïðåäåëÿåìîãî ðàçðàáîò÷èêîì ïðîãðàììû
 class Err {
-    String msg; // ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð¾ÑˆÐ¸Ð±ÐºÐµ
-    int severity; // ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ ÑÐµÑ€ÑŒÐµÐ·Ð½Ð¾ÑÑ‚Ð¸ Ð¾ÑˆÐ¸Ð±ÐºÐ¸
+    String msg; // ñîîáùåíèå îá îøèáêå
+    int severity; // óðîâåíü ñåðüåçíîñòè îøèáêè
 
     Err (String m, int s) {
         msg = m;
@@ -11,10 +11,10 @@ class Err {
 }
 class ErrorInfo {
     String[] msgs =  {
-        "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ñ‹Ð²Ð¾Ð´Ð°",
-        "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°",
-        "ÐžÑ‚ÑÑƒÑ‚ÑÐ²ÑƒÐµÑ‚ Ð¼ÐµÑÑ‚Ð¾ Ð½Ð° Ð´Ð¸ÑÐºÐµ",
-        "Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð½Ð´ÐµÐºÑÐ° Ð·Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°"
+        "Îøèáêà âûâîäà",
+        "Îøèáêà ââîäà",
+        "Îòñóòñâóåò ìåñòî íà äèñêå",
+        "Âûõîä èíäåêñà çà ãðàíèöû äèàïàçîíà"
     };
     int[] howbad = { 3 ,3 ,2 ,4};
 
@@ -23,7 +23,7 @@ class ErrorInfo {
         if (i >= 0 & i < msgs.length)
             return new Err(msgs[i], howbad[i] );
             else
-                return new Err("ÐÐµÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¹ ÐºÐ¾Ð´ Ð¾ÑˆÐ¸Ð±ÐºÐ¸", 0);
+                return new Err("Íåñóùåñòâóþùèé êîä îøèáêè", 0);
     }}
 class ErrInfo {
     public static void main(String[] args) {
@@ -31,10 +31,10 @@ class ErrInfo {
         Err e;
 
         e = err.getErrorInfo(2);
-        System.out.println(e.msg +" ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: " + e.severity);
+        System.out.println(e.msg +" óðîâåíü: " + e.severity);
 
         e = err.getErrorInfo(19);
-        System.out.println(e.msg + " ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: " + e.severity);
+        System.out.println(e.msg + " óðîâåíü: " + e.severity);
 
     }
 }

@@ -7,8 +7,8 @@ class Test2 {
         b = j;
     }
 
-    // РџРµСЂРµРґР°С‡Р° РѕР±СЉРµРєС‚Р° РјРµС‚РѕРґСѓ. РўРµРїРµСЂСЊ РїРµСЂРµРјРµРЅРЅС‹Рµ ob.a Рё ob.b
-    // РѕР±СЉРµРєС‚Р°, РёСЃРїРѕР»СЊР·СѓРµРјРѕРіРѕ РїСЂРё РІС‹Р·РѕРІРµ, С‚Р°РєР¶Рµ Р±СѓРґСѓС‚ РёР·РјРµРЅСЏС‚СЊСЃСЏ.
+    // Передача объекта методу. Теперь переменные ob.a и ob.b
+    // объекта, используемого при вызове, также будут изменяться.
     void change(Test2 ob){
         ob.a = ob.a + ob.b;
         ob.b = -ob.b;
@@ -18,10 +18,10 @@ public class CallByRef {
     public static void main(String[] args) {
         Test2 ob = new Test2(15, 20);
 
-        System.out.println("ob.a Рё ob.b РїРµСЂРµРґ РІС‹Р·РѕРІРѕРј: " + ob.a + " " + ob.b);
+        System.out.println("ob.a и ob.b перед вызовом: " + ob.a + " " + ob.b);
 
         ob.change(ob);
 
-        System.out.println("ob.a Рё ob.b РїРѕСЃР»Рµ РІС‹Р·РѕРІР°: " + ob.a + " " + ob.b);
+        System.out.println("ob.a и ob.b после вызова: " + ob.a + " " + ob.b);
     }
 }

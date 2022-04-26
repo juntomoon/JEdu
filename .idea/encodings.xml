@@ -4,12 +4,19 @@
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ACopy.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ArrayDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/AssignARef.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Block.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Booldemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/BreakDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Bubble.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/CLDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/CallByRef.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/CallByValue.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/CastDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ConsDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/DWDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ErrInfo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ErrorMsg.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/FailSoftArray.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ForEach.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ForEach2.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Guess.java" charset="windows-1251" />
@@ -24,10 +31,14 @@
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/LenghtDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/MinMax.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ModDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/MyClass.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/NoZeroDiv.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Phone.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/QDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Queue2.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Ragged.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Search.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/ShowBitsDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/Sound.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/StrDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/StrOps.java" charset="windows-1251" />
@@ -38,7 +49,6 @@
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/TruckDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/UseCast.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/VehicleDemo.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/booldemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/chararithdemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/pack/javaeducation/hypot.java" charset="windows-1251" />
     <file url="PROJECT" charset="windows-1251" />
