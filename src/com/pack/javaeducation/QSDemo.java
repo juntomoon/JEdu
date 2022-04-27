@@ -1,21 +1,21 @@
 package com.pack.javaeducation;
 /*
-РЈРїСЂР°Р¶РЅРµРЅРёРµ 6.3. РџСЂРѕСЃС‚Р°СЏ РІРµСЂСЃРёСЏ РєР»Р°СЃСЃР° QuickSort,
- Р РµР°Р»РёР·СѓСЋС‰РµРіРѕ Р±С‹СЃС‚СЂСѓСЋ СЃРѕСЂС‚РёСЂРѕРІРєСѓ
+Упражнение 6.3. Простая версия класса QuickSort,
+ Реализующего быструю сортировку
  */
 
 class QuickSort{
 
-    // Р’С‹Р·РѕРІ С„Р°РєС‚РёС‡РµСЃРєРѕРіРѕ РјРµС‚РѕРґР° Р±С‹СЃС‚СЂРѕР№ СЃРѕСЂС‚РёСЂРѕРІРєРё
+    // Вызов фактического метода быстрой сортировки
     static void qsort(char[] items){
         qs(items, 0, items.length - 1);
     }
 
-    // Р РµРєСѓСЂСЃРёРІРЅР°СЏ РІРµСЂСЃРёСЏ РјРµС‚РѕРґР° Р±С‹СЃС‚СЂРѕР№ СЃРѕСЂС‚РёСЂРѕРІРєРё СЃРёРјРІРѕР»РѕРІ
+    // Рекурсивная версия метода быстрой сортировки символов
     private static void qs(char[] items, int left, int right)
     {
-        int i,j;
-        char x,y;
+        int i, j;
+        char x, y;
 
         i = left; j = right;
         x = items[(left + right)/2];
@@ -41,16 +41,16 @@ class QSDemo {
         char[] a = {'d','x', 'a', 'r', 'p', 'j', 'i'};
         int i;
 
-        System.out.print("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: ");
+        System.out.print("Исходный массив: ");
         for(i = 0; i < a.length; i++)
             System.out.print(a[i]);
 
         System.out.println();
 
-        // РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°
+        // Сортировка массива
         QuickSort.qsort(a);
 
-        System.out.print("РћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ: ");
+        System.out.print("Отсортированный массив: ");
         for(i = 0; i < a.length; i++)
         System.out.print(a[i]);
     }

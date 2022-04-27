@@ -2,9 +2,9 @@ package com.pack.javaeducation;
 
 import java.util.Arrays;
 
-// РџСЂРѕСЃС‚РѕР№ РїСЂРёРјРµСЂ СЂРµРєСѓСЂСЃРёРё
+// Простой пример рекурсии
 class Factorial {
-    // Р РµРєСѓСЂСЃРёРІРЅС‹Р№ РјРµС‚РѕРґ
+    // Рекурсивный метод
         int factR(int n) {
         int result;
 
@@ -15,8 +15,8 @@ class Factorial {
     }
 
 
-    // Р’Р°СЂРёР°РЅС‚ РїСЂРѕРіСЂР°РјРјС‹, РІС‹С‡РёСЃР»СЏСЋС‰РёР№ С„Р°РєС‚РѕСЂРёСЏР°Р»
-    // РёС‚РµСЂР°С‚РёРІРЅС‹Рј СЃРїРѕСЃРѕР±РѕРј
+    // Вариант программы, вычисляющий факторияал
+    // итеративным способом
     int factI(int n) {
         int t, result;
 
@@ -28,14 +28,14 @@ class Factorial {
     class Recursion {
           public static void main(String[] args) {
             Factorial f = new Factorial();
-            System.out.println("Р’С‹С‡РёСЃР»РµРЅРёРµ СЂРµРєСѓСЂСЃРёРІРЅС‹Рј РјРµС‚РѕРґРѕРј");
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 3 СЂР°РІРµРЅ " + f.factR(1));
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 4 СЂР°РІРµРЅ " + f.factR(4));
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 5 СЂР°РІРµРЅ " + f.factR(5));
+            System.out.println("Вычисление рекурсивным методом");
+            System.out.println("Факториал 3 равен " + f.factR(3));
+            System.out.println("Факториал 4 равен " + f.factR(4));
+            System.out.println("Факториал 5 равен " + f.factR(5));
             System.out.println();
-            System.out.println("Р’С‹С‡РёСЃР»РµРЅРёРµ РёС‚РµСЂР°С‚РёРІРЅС‹Рј РјРµС‚РѕРґРѕРј");
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 3 СЂР°РІРµРЅ " + f.factI(3));
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 3 СЂР°РІРµРЅ " + f.factI(4));
-            System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» 3 СЂР°РІРµРЅ " + f.factI(5));
+            System.out.println("Вычисление итеративным методом");
+            System.out.println("Факториал 3 равен " + f.factI(3));
+            System.out.println("Факториал 4 равен " + f.factI(4));
+            System.out.println("Факториал 5 равен " + f.factI(5));
         }
     }

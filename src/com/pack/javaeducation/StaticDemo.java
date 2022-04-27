@@ -2,45 +2,45 @@ package com.pack.javaeducation;
 
 import java.util.Arrays;
 
-// РџСЂРёРјРµРЅРµРЅРёРµ СЃС‚Р°С‚РёС‡РµСЃРєРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№
+// Применение статической переменной
 class StaticDemo {
-    int x;; // РѕР±С‹С‡РЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ СЌРєР·РµРјРїР»СЏСЂР°
-    static int y; //СЃС‚Р°С‚РёС‡РµСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ
+    int x; // обычная переменная экземпляра
+    static int y; //статическая переменная
 
-    // Р’РѕР·РІСЂР°С‚ СЃСѓРјРјС‹ Р·РЅР°С‡РµРёР№ РїРµСЂРµРјРµРЅРЅРѕР№ СЌРєР·РµРјРїР»СЏСЂР° x
-    // Рё СЃС‚Р°С‚РёС‡РµСЃРєРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№ y
+    // Возврат суммы значеий переменной экземпляра x
+// и статической переменной y
     int sum() {
         return x + y;
     }
 }
+
 class SDemo {
     public static void main(String[] args) {
         StaticDemo ob1 = new StaticDemo();
         StaticDemo ob2 = new StaticDemo();
 
-        // РЈ РєР°Р¶РґРѕРіРѕ РѕР±СЉРµРєС‚Р° РёРјРµС‚СЃСЏ СЃРІРѕСЏ РєРѕРїРёСЏ
-        // РїРµСЂРµРјРµРЅРЅРѕР№ СЌРєР·РµРјРїР»СЏСЂР°
+// У каждого объекта имется своя копия
+// переменной экземпляра
         ob1.x = 10;
         ob2.x = 20;
-        System.out.println("Р Р°Р·СѓРјРµРµС‚СЃСЏ, ob1.x Рё ob2.x РЅРµР·Р°РІРёСЃРёРјС‹");
+        System.out.println("Разумеется, ob1.x и ob2.x независимы");
         System.out.println("ob1.x: " + ob1.x + "\nob2.x: " + ob2.x);
         System.out.println();
 
-        // Р’СЃРµ РѕР±СЉРµРєС‚С‹ СЃРѕРІРјРµСЃС‚РЅРѕ РёСЃРїРѕР»СЊР·СѓСЋС‚ РѕРґРЅСѓ РѕР±С‰СѓСЋ
-        // РєРѕРїРёСЋ СЃС‚Р°С‚РёС‡РµСЃРєРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№
-        System.out.println("РЎС‚Р°С‚РёС‡РµСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ y - РѕР±С‰Р°СЏ");
+// Все объекты совместно используют одну общую
+// копию статической переменной
+        System.out.println("Статическая переменная y - общая");
         StaticDemo.y = 19;
-        System.out.println("РџСЂРёСЃРІРѕРёС‚СЊ StaticDemo.y Р·РЅР°С‡РµРЅРёРµ 19");
+        System.out.println("Присвоить StaticDemo.y значение 19");
 
         System.out.println("ob1.sum(): " + ob1.sum());
         System.out.println("ob2.sum(): " + ob2.sum());
         System.out.println();
         StaticDemo.y = 100;
-        System.out.println("РР·РјРµРЅРёС‚СЊ Р·РЅР°С‡РµРЅРёРµ StaticDemo.y РЅР° 100");
+        System.out.println("Изменить значение StaticDemo.y на 100");
 
         System.out.println("ob1.sum(): " + ob1.sum());
         System.out.println("ob2.sum(): " + ob2.sum());
         System.out.println();
-        StaticDemo.y = 100;
     }
 }

@@ -1,32 +1,35 @@
 package com.pack.javaeducation;
-// РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґР° СЃ РїРµСЂРµРјРµРЅРЅС‹Рј С‡РёСЃР»РѕРј Р°СЂРіСѓРјРµРЅС‚РѕРІ
+// Перегрузка метода с переменным числом аргументов
 
 class VarArgs3 {
 
     static void vaTest(int ... v){
         System.out.println("vaTest(int ... ): "
-                + "РљРѕР»РёС‡РµСЃС‚РІРѕ Р°СЂРіСѓРјРµРЅС‚РѕРІ: " + v.length);
-        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
+                + "Количество аргументов: " + v.length);
+        System.out.println("Содержимое: ");
+
         for (int i = 0; i < v.length; i++)
-            System.out.println(" arg " + i + ": " + v[i]);
+            System.out.println("arg " + i + ": " + v[i]);
 
         System.out.println();
     }
     static void vaTest(boolean ... v){
         System.out.println("vaTest(boolean ...):"
-                + "РљРѕР»РёС‡РµСЃС‚РІРѕ Р°СЂРіСѓРјРµРЅС‚РѕРІ: " + v.length);
-        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
+                + "Количество аргументов: " + v.length);
+        System.out.println("Содержимое: ");
+
         for (int i = 0; i < v.length; i++)
-            System.out.println(" arg " + i + ": " + v[i]);
+            System.out.println("arg " + i + ": " + v[i]);
+
         System.out.println();
     }
     static void vaTest(String msg, int ... v) {
         System.out.println("vaTest(String msg, int ...): "
         + msg + v.length);
-        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
+        System.out.println("Содержимое: ");
 
         for (int i = 0; i < v.length; i++)
-            System.out.println(" arg " + i + ": " + v[i]);
+            System.out.println("arg " + i + ": " + v[i]);
 
         System.out.println();
     }
@@ -34,7 +37,7 @@ class VarArgs3 {
     public static void main(String[] args) {
         {
             vaTest(1, 2, 3);
-            vaTest("РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ: ",10 , 20);
+            vaTest("Тестирование: ",10 , 20);
             vaTest(true, false, false);
         }
     }

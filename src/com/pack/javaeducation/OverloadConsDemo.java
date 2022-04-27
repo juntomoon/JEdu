@@ -3,19 +3,19 @@ package com.pack.javaeducation;
 class MyClass2 {
     int x;
     MyClass2(){
-        System.out.println("Р’РЅСѓС‚СЂРё MyClass().");
+        System.out.println("Внутри MyClass().");
         x = 0;
     }
     MyClass2(int i) {
-        System.out.println("Р’РЅСѓС‚СЂРё MyClass(int).");
+        System.out.println("Внутри MyClass(int).");
         x = i;
     }
     MyClass2 (double d) {
-        System.out.println("Р’РЅСѓС‚СЂРё Myclass(double).");
+        System.out.println("Внутри Myclass(double).");
         x = (int) d ;
     }
     MyClass2 (int i, int j) {
-        System.out.println("Р’РЅСѓС‚СЂРё Myclass(int,int).");
+        System.out.println("Внутри Myclass(int,int).");
         x = i * j;
     }
 }

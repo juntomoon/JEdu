@@ -1,20 +1,21 @@
 package com.pack.javaeducation;
-// РџСЂРёРјРµРЅРµРЅРёРµ СЃС‚Р°С‚РёС‡РµСЃРєРѕРіРѕ РјРµС‚РѕРґР°
-class StaticMeth {
-    static int val = 1024; // СЃС‚Р°С‚РёС‡РµСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ
 
-    // РЎС‚Р°С‚РёС‡РµСЃРєР°СЏ РјРµС‚РѕРґ
+// Применение статического метода
+class StaticMeth {
+    static int val = 1024; // статическая переменная
+    // Статическая метод
     static int valDiv2() {
-        return val/2;
+        return val / 2;
     }
 }
+
 class SDemo2 {
     public static void main(String[] args) {
 
-        System.out.println("Р—РЅР°С‡РµРЅРёРµ val: " + StaticMeth.val);
+        System.out.println("Значение val: " + StaticMeth.val);
         System.out.println("StaticMeth.valDiv2(): " + StaticMeth.valDiv2());
         StaticMeth.val = 4;
-        System.out.println("Р—РЅР°С‡РµРЅРёРµ val: " + StaticMeth.val);
+        System.out.println("Значение val: " + StaticMeth.val);
         System.out.println("StaticMeth.valDiv(): " + StaticMeth.valDiv2());
     }
 }

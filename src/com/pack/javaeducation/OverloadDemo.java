@@ -1,24 +1,24 @@
 package com.pack.javaeducation;
-//  РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґРѕРІ
+//  Перегрузка методов
 class Overload {
     void ovlDemo() {
-        System.out.println("Р‘РµР· РїР°СЂР°РјРµС‚СЂРѕРІ");
+        System.out.println("Без параметров");
     }
 
-    // РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґР° ovlDemo РґР»СЏ РѕРґРЅРѕРіРѕ РїР°СЂР°РјРµС‚СЂР° С‚РёРїР° int
+    // Перегрузка метода ovlDemo для одного параметра типа int
     void ovlDemo(int a) {
-        System.out.println("РћРґРёРЅ РїР°СЂР°РјРµС‚СЂ: " + a);
+        System.out.println("Один параметр: " + a);
     }
 
-    // РџРµСЂРіСЂСѓР·РєР° РјРµС‚РѕРґР° ovlDemo РґР»СЏ РґРІСѓС… РїР°СЂР°РјРµС‚СЂРѕРІ С‚РёРїР° int
+    // Пергрузка метода ovlDemo для двух параметров типа int
     int ovlDemo(int a, int b) {
-        System.out.println("Р”РІР° РїР°СЂР°РјРµС‚СЂР°: " + a + " " + b);
+        System.out.println("Два параметра: " + a + " " + b);
         return a + b;
     }
 
-    //РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґР° ovlDemo РґР»СЏ РґРІСѓС… РїР°СЂР°РјРµС‚СЂРѕРІ С‚РёРїР° double
+    //Перегрузка метода ovlDemo для двух параметров типа double
     double ovlDemo(double a, double b) {
-        System.out.println("Р”РІР° РїР°СЂР°РјРµС‚СЂР° С‚РёРїР° double: " + a +  " " + b);
+        System.out.println("Два параметра типа double: " + a +  " " + b);
         return a + b;
     }
 }
@@ -28,7 +28,7 @@ class Overload {
             int resI;
             double resD;
 
-            // РџРѕРѕС‡РµСЂРµРґРЅС‹Р№ РІС‹Р·РѕРІ РІСЃРµС… РІРµСЂСЃРёР№ РјРµС‚РѕРґР° ovlDemo()
+            // Поочередный вызов всех версий метода ovlDemo()
             ob.ovlDemo();
             System.out.println();
 
@@ -36,11 +36,11 @@ class Overload {
             System.out.println();
 
             resI = ob.ovlDemo(4, 6);
-            System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹Р·РѕРІР° ob.ovlDemo(4, 6): " + resI);
+            System.out.println("Результат вызова ob.ovlDemo(4, 6): " + resI);
             System.out.println();
 
             resD = ob.ovlDemo(1.1, 2.32);
-            System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹Р·РѕРІР° ob.ovlDemo(1.1, 2.32): " + resD);
+            System.out.println("Результат вызова ob.ovlDemo(1.1, 2.32): " + resD);
             System.out.println();
         }
     }

@@ -1,5 +1,5 @@
 package com.pack.javaeducation;
-// РџСЂРёРјРµРЅРµРЅРёРµ РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ РєР»Р°СЃСЃР°
+// Применение внутреннего класса
 class Outer {
     int[] nums;
 
@@ -9,11 +9,11 @@ class Outer {
 void Analyze() {
         Inner inOb = new Inner();
 
-    System.out.println("РњРёРЅРёРјСѓРј: " + inOb.min());
-    System.out.println("РњР°РєСЃРёРјСѓРј: " + inOb.max());
-    System.out.println("РЎСЂРµРґРЅРµРµ: " + inOb.avg());
+    System.out.println("Минимум: " + inOb.min());
+    System.out.println("Максимум: " + inOb.max());
+    System.out.println("Среднее: " + inOb.avg());
 }
-// Р’РЅСѓС‚СЂРµРЅРЅРёР№ РєР»Р°СЃСЃ
+// Внутренний класс
     class Inner {
         int min(){
             int m = nums [0];
