@@ -3,6 +3,7 @@ package com.pack.javaeducation;
 // Простая иерархия классов
 
 // Класс, описывающий двумерные объекты
+
 class TwoDD {
     private double width;
     private double height;

@@ -1,6 +1,7 @@
 package com.pack.javaeducation;
 // Использование ключевого слова super
 // для предотвращения сокрытия имен
+
 class AAA {
     int i;
 }

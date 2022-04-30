@@ -1,5 +1,6 @@
 package com.pack.javaeducation;
 // Демонстрация использования двухмерного массива
+
 public class TwoD {
     public static void main(String[] args) {
         int t, i;
