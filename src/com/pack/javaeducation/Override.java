@@ -1,6 +1,6 @@
 package com.pack.javaeducation;
-/* РњРµС‚РѕРґС‹ СЃ СЂР°Р·РЅС‹РјРё СЃРёРіРЅР°С‚СѓСЂР°РјРё РЅРµ РїРµСЂРµРѕРїСЂРµРґРµР»СЏСЋС‚СЃСЏ,
- Р° РїРµСЂРµР·Р°РіСЂСѓР¶Р°СЋС‚СЃСЏ */
+/* Методы с разными сигнатурами не переопределяются,
+ а перезагружаются */
 class AA {
     int i, j;
 
@@ -8,12 +8,12 @@ class AA {
         i = a;
         j = b;
     }
-    // РћС‚РѕР±СЂР°Р¶РµРЅРёРµ РїРµСЂРµРјРµРЅРЅС‹С… i Рё j
+    // Отображение переменных i и j
     void show() {
-        System.out.println("i Рё j: " + i + " " + j );
+        System.out.println("i и j: " + i + " " + j );
     }
 }
-// РЎРѕР·РґР°РЅРёРµ РїРѕРґРєР»Р°СЃСЃР° РїСѓС‚РµРј СЂР°СЃС€РёСЂРµРЅРёСЏ РєР»Р°СЃСЃР° AA
+// Создание подкласса путем расширения класса AA
 class BB extends AA{
     int k;
 
@@ -22,16 +22,17 @@ class BB extends AA{
         k = c;
     }
 
-    // РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґР° show()
-    void show(String msg){
-        System.out.println(msg  + k);
+  //Отображение переменной k - переопределение метода show() в AA
+    void show(){
+        super.show();
+        System.out.println("k: " + k);
     }
 }
-class Overload2 {
-    public static void main(String[] args) {
-        BB subOb = new BB(1 , 2 , 3);
 
-        subOb.show("k: "); // РІС‹Р·РѕРІ РјРµС‚РѕРґР° show() РёР· РєР»Р°СЃСЃР° BB
-        subOb.show(); // РІС‹Р·РѕРІ РјРµС‚РѕРґР° show() РёР· РєР»Р°СЃСЃР° AA
+class Override {
+    public static void main(String[] args) {
+        BB subOb = new BB(1, 2, 3);
+
+        subOb.show(); // вызов метода show из класса BB
     }
 }

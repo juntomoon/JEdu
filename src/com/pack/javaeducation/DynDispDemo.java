@@ -1,24 +1,24 @@
 package com.pack.javaeducation;
-// Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ РґРёРЅР°РјРёС‡РµСЃРєРѕР№ РґРёСЃРїРµС‚С‡РµСЂРёР·Р°С†РёРё РјРµС‚РѕРґРѕРІ
+// Демонстрация динамической диспетчеризации методов
 class Sup {
     void who() {
-        System.out.println("who() РІ Sup");
+        System.out.println("who() в Sup");
     }
 }
 class Sub1 extends Sup{
     void who() {
-        System.out.println("who() РІ Sub1");
+        System.out.println("who() в Sub1");
     }
 }
 class Sub2 extends Sup {
     void who() {
-        System.out.println("who() РІ Sub2");
+        System.out.println("who() в Sub2");
     }
 }
 class DynDispDemo {
     public static void main(String[] args) {
         Sup superOb = new Sup();
-        Sub1 subOb = new Sub1();
+        Sub1 subOb1 = new Sub1();
         Sub2 subOb2 = new Sub2();
 
         Sup supRef;
@@ -26,13 +26,13 @@ class DynDispDemo {
         supRef = superOb;
         supRef.who();
 
-        supRef = subOb;
+        supRef = subOb1;
         supRef.who();
 
         supRef = subOb2;
         supRef.who();
     }
-    }
+}
 
 
 
