@@ -1,4 +1,4 @@
-package javaeducation;
+package qpack;
 
 // Интерфейс для очереди символов
 public interface ICharQ {

@@ -29,14 +29,12 @@
     <file url="file://$PROJECT_DIR$/src/javaeducation/Help2.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/Help3.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/HelpClassDemo.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/javaeducation/IQDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/Inch.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/KbIn.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/Ladder.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/LenghtDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/MinMax.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/ModDemo.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/javaeducation/MyClass.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/Myclass.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/NestedClassDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/NoZeroDiv.java" charset="windows-1251" />
@@ -73,6 +71,7 @@
     <file url="file://$PROJECT_DIR$/src/javaeducation/chararithdemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/hypot.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/javaeducation/vaTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/qpack/IQDemo.java" charset="windows-1251" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>
