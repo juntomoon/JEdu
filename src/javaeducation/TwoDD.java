@@ -1,96 +1,96 @@
 package javaeducation;
 
-// Простая иерархия классов
+// РџСЂРѕСЃС‚Р°СЏ РёРµСЂР°СЂС…РёСЏ РєР»Р°СЃСЃРѕРІ
 
-// Класс, описывающий двумерные объекты
+// РљР»Р°СЃСЃ, РѕРїРёСЃС‹РІР°СЋС‰РёР№ РґРІСѓРјРµСЂРЅС‹Рµ РѕР±СЉРµРєС‚С‹
 class TwoDD {
     private double width;
     private double height;
 
-    // Конструктор заданный по умолчанию
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р°РґР°РЅРЅС‹Р№ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
     TwoDD() {
         width = height = 0;
     }
 
-    // Параметризованный конструктор
+    // РџР°СЂР°РјРµС‚СЂРёР·РѕРІР°РЅРЅС‹Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     TwoDD(double w, double h) {
         width = w;
         height = h;
     }
 
-    // Создание объекта с одинаковыми значениями
-    // переменных экземпляра width и height
+    // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° СЃ РѕРґРёРЅР°РєРѕРІС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
+    // РїРµСЂРµРјРµРЅРЅС‹С… СЌРєР·РµРјРїР»СЏСЂР° width Рё height
     TwoDD(double x){
         width = height = x;
     }
 
-    // Методы доступа к переменным экземпляра width и height
+    // РњРµС‚РѕРґС‹ РґРѕСЃС‚СѓРїР° Рє РїРµСЂРµРјРµРЅРЅС‹Рј СЌРєР·РµРјРїР»СЏСЂР° width Рё height
     double getWidth() {return width;}
     double getHeight() {return height;}
     void setWidth(double w) {width = w;}
     void setHeight(double h) {height = h;}
 
     void showDim() {
-        System.out.println("Ширина и высота - " + width + " и " + height);
+        System.out.println("РЁРёСЂРёРЅР° Рё РІС‹СЃРѕС‚Р° - " + width + " Рё " + height);
     }
 }
 
-// Подкласс для представления треугольников,
-// производный от класса TwoDShape {
+// РџРѕРґРєР»Р°СЃСЃ РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ С‚СЂРµСѓРіРѕР»СЊРЅРёРєРѕРІ,
+// РїСЂРѕРёР·РІРѕРґРЅС‹Р№ РѕС‚ РєР»Р°СЃСЃР° TwoDShape {
 class Triangles extends TwoDD {
     private String style;
 
-    // Конструктор по умолчанию
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
     Triangles() {
-        super(); // Вызов конструктора суперкласса по умолчанию
+        super(); // Р’С‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
         style = "none";
     }
-    // Конструктор
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     Triangles(String s, double w, double h) {
-        super (w, h); // Вызов конструктора с двумя аргументами
+        super (w, h); // Р’С‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃ РґРІСѓРјСЏ Р°СЂРіСѓРјРµРЅС‚Р°РјРё
 
         style = s;
     }
-    // Конструктор с одним аргументом
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РѕРґРЅРёРј Р°СЂРіСѓРјРµРЅС‚РѕРј
     Triangles(double x) {
-        super(x); //вызов конструктора суперкласса с одним аргументом
+        super(x); //РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР° СЃ РѕРґРЅРёРј Р°СЂРіСѓРјРµРЅС‚РѕРј
 
-        style = "Закрашенный";
+        style = "Р—Р°РєСЂР°С€РµРЅРЅС‹Р№";
     }
     double area() {
         return getWidth() * getHeight() / 2;
     }
     void showstyle() {
-        System.out.println("Треугольник - " + style);
+        System.out.println("РўСЂРµСѓРіРѕР»СЊРЅРёРє - " + style);
     }
 }
 
 class Shapes {
     public static void main(String[] args) {
         Triangles t1 = new Triangles();
-        Triangles t2 = new Triangles("Контурный", 8.0, 12.0);
+        Triangles t2 = new Triangles("РљРѕРЅС‚СѓСЂРЅС‹Р№", 8.0, 12.0);
         Triangles t3 = new Triangles(4.0);
 
         t1 = t2;
 
-        System.out.println("Информация о t1:  ");
+        System.out.println("РРЅС„РѕСЂРјР°С†РёСЏ Рѕ t1:  ");
         t1.showstyle();
         t1.showDim();
-        System.out.println("Площадь - " + t1.area());
+        System.out.println("РџР»РѕС‰Р°РґСЊ - " + t1.area());
 
         System.out.println();
 
-        System.out.println("Информация о t2: ");
+        System.out.println("РРЅС„РѕСЂРјР°С†РёСЏ Рѕ t2: ");
         t2.showstyle();
         t2.showDim();
-        System.out.println("Площадь - " + t2.area());
+        System.out.println("РџР»РѕС‰Р°РґСЊ - " + t2.area());
 
         System.out.println();
 
-        System.out.println("Информация о t3: ");
+        System.out.println("РРЅС„РѕСЂРјР°С†РёСЏ Рѕ t3: ");
         t3.showstyle();
         t3.showDim();
-        System.out.println("Площадь - " + t3.area());
+        System.out.println("РџР»РѕС‰Р°РґСЊ - " + t3.area());
 
         System.out.println();
     }

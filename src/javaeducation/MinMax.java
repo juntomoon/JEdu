@@ -21,7 +21,7 @@ class MinMax {
             if (nums[i] < min) min = nums[i];
             if (nums[i] > max) max = nums[i];
             }
-        System.out.println("min è max: " + min + " " + max);
+        System.out.println("min Ð¸ max: " + min + " " + max);
         }
     }
 

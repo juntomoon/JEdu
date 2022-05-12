@@ -1,12 +1,12 @@
 package javaeducation;
-// Перегрузка метода с переменным числом аргументов
+// РџРµСЂРµРіСЂСѓР·РєР° РјРµС‚РѕРґР° СЃ РїРµСЂРµРјРµРЅРЅС‹Рј С‡РёСЃР»РѕРј Р°СЂРіСѓРјРµРЅС‚РѕРІ
 
 class VarArgs3 {
 
     static void vaTest(int ... v){
         System.out.println("vaTest(int ... ): "
-                + "Количество аргументов: " + v.length);
-        System.out.println("Содержимое: ");
+                + "РљРѕР»РёС‡РµСЃС‚РІРѕ Р°СЂРіСѓРјРµРЅС‚РѕРІ: " + v.length);
+        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
 
         for (int i = 0; i < v.length; i++)
             System.out.println("arg " + i + ": " + v[i]);
@@ -15,8 +15,8 @@ class VarArgs3 {
     }
     static void vaTest(boolean ... v){
         System.out.println("vaTest(boolean ...):"
-                + "Количество аргументов: " + v.length);
-        System.out.println("Содержимое: ");
+                + "РљРѕР»РёС‡РµСЃС‚РІРѕ Р°СЂРіСѓРјРµРЅС‚РѕРІ: " + v.length);
+        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
 
         for (int i = 0; i < v.length; i++)
             System.out.println("arg " + i + ": " + v[i]);
@@ -26,7 +26,7 @@ class VarArgs3 {
     static void vaTest(String msg, int ... v) {
         System.out.println("vaTest(String msg, int ...): "
         + msg + v.length);
-        System.out.println("Содержимое: ");
+        System.out.println("РЎРѕРґРµСЂР¶РёРјРѕРµ: ");
 
         for (int i = 0; i < v.length; i++)
             System.out.println("arg " + i + ": " + v[i]);
@@ -37,7 +37,7 @@ class VarArgs3 {
     public static void main(String[] args) {
         {
             vaTest(1, 2, 3);
-            vaTest("Тестирование: ",10 , 20);
+            vaTest("РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ: ",10 , 20);
             vaTest(true, false, false);
         }
     }

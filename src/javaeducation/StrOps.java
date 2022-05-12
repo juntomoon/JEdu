@@ -2,42 +2,42 @@ package javaeducation;
 
 public class StrOps {
     public static void main(String[] args) {
-        String str1 = "Java - лидер Интернета!";
+        String str1 = "Java - Р»РёРґРµСЂ РРЅС‚РµСЂРЅРµС‚Р°!";
         String str2 = new String(str1);
-        String str3 = "Строки Java эффективны.";
+        String str3 = "РЎС‚СЂРѕРєРё Java СЌС„С„РµРєС‚РёРІРЅС‹.";
         int result, idx;
         char ch;
 
-        System.out.println("Длина str1: " + str1.length() );
+        System.out.println("Р”Р»РёРЅР° str1: " + str1.length() );
 
-        //Отображение строки str1 посимвольно
+        //РћС‚РѕР±СЂР°Р¶РµРЅРёРµ СЃС‚СЂРѕРєРё str1 РїРѕСЃРёРјРІРѕР»СЊРЅРѕ
         for (int i = 0; i < str1.length(); i++)
             System.out.print(" " + str1.charAt(i));
         System.out.println();
 
         if (str1.equals(str2))
-           System.out.println("str1 эквивалентна str2");
+           System.out.println("str1 СЌРєРІРёРІР°Р»РµРЅС‚РЅР° str2");
         else
-           System.out.println("str1 не эквивалентна str2");
+           System.out.println("str1 РЅРµ СЌРєРІРёРІР°Р»РµРЅС‚РЅР° str2");
 
         if (str1.equals(str3))
-            System.out.println("str1 эквивалентна str3");
+            System.out.println("str1 СЌРєРІРёРІР°Р»РµРЅС‚РЅР° str3");
         else
-           System.out.println("str1 не эквивалентна str3");
+           System.out.println("str1 РЅРµ СЌРєРІРёРІР°Р»РµРЅС‚РЅР° str3");
         result = str1.compareToIgnoreCase(str3);
                if (result == 0)
-            System.out.println("str1 и str3 равны");
+            System.out.println("str1 Рё str3 СЂР°РІРЅС‹");
         else if (result < 0 )
-                   System.out.println("str1 меньше str3");
+                   System.out.println("str1 РјРµРЅСЊС€Рµ str3");
         else
-            System.out.println("str1 больше str3");
+            System.out.println("str1 Р±РѕР»СЊС€Рµ str3");
 
-        //Присваивание переменной str2 новой строки
+        //РџСЂРёСЃРІР°РёРІР°РЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ str2 РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё
         str2 = "One Two Three One";
 
         idx = str2.indexOf("One");
-        System.out.println("Индекс первого вхождения One: " + idx);
+        System.out.println("РРЅРґРµРєСЃ РїРµСЂРІРѕРіРѕ РІС…РѕР¶РґРµРЅРёСЏ One: " + idx);
        idx = str2.lastIndexOf("One");
-        System.out.println("Индекс последнего вхождения One: " + idx);
+        System.out.println("РРЅРґРµРєСЃ РїРѕСЃР»РµРґРЅРµРіРѕ РІС…РѕР¶РґРµРЅРёСЏ One: " + idx);
     }
 }

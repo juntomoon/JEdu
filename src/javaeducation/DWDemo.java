@@ -8,8 +8,8 @@ public class DWDemo {
         char ch;
 
         do {
-            System.out.print("Нажмите нужную клавишу, а затем клавишу ENTER: ");
-            ch = (char) System.in.read(); // чтение символа с клавиатуры
+            System.out.print("РќР°Р¶РјРёС‚Рµ РЅСѓР¶РЅСѓСЋ РєР»Р°РІРёС€Сѓ, Р° Р·Р°С‚РµРј РєР»Р°РІРёС€Сѓ ENTER: ");
+            ch = (char) System.in.read(); // С‡С‚РµРЅРёРµ СЃРёРјРІРѕР»Р° СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
         } while (ch != 'q');
     }
 }

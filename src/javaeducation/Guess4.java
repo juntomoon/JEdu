@@ -8,22 +8,22 @@ public class Guess4 {
         char ch, ignore, answer = 'K';
 
         do {
-            System.out.println("Задумана буква из диапазона A-Z.");
-            System.out.print("Попытайтесь ее угадать: ");
-            // Получение символа с клавиатуры
+            System.out.println("Р—Р°РґСѓРјР°РЅР° Р±СѓРєРІР° РёР· РґРёР°РїР°Р·РѕРЅР° A-Z.");
+            System.out.print("РџРѕРїС‹С‚Р°Р№С‚РµСЃСЊ РµРµ СѓРіР°РґР°С‚СЊ: ");
+            // РџРѕР»СѓС‡РµРЅРёРµ СЃРёРјРІРѕР»Р° СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
             ch = (char) System.in.read();
 
-            //Отбрасывание всех остальных символов во входном буфере
+            //РћС‚Р±СЂР°СЃС‹РІР°РЅРёРµ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… СЃРёРјРІРѕР»РѕРІ РІРѕ РІС…РѕРґРЅРѕРј Р±СѓС„РµСЂРµ
             do {
                 ignore = (char) System.in.read();
            } while (ignore != '\n');
 
-            if (ch == answer) System.out.println("** Правильно! **");
+            if (ch == answer) System.out.println("** РџСЂР°РІРёР»СЊРЅРѕ! **");
             else {
-                System.out.print("...Извините, нужная буква находится ");
-                if (ch < answer) System.out.println("ближе к концу алфавита");
-                else System.out.println("ближе к началу алфавита");
-                System.out.println("Повторите попытку!\n");
+                System.out.print("...РР·РІРёРЅРёС‚Рµ, РЅСѓР¶РЅР°СЏ Р±СѓРєРІР° РЅР°С…РѕРґРёС‚СЃСЏ ");
+                if (ch < answer) System.out.println("Р±Р»РёР¶Рµ Рє РєРѕРЅС†Сѓ Р°Р»С„Р°РІРёС‚Р°");
+                else System.out.println("Р±Р»РёР¶Рµ Рє РЅР°С‡Р°Р»Сѓ Р°Р»С„Р°РІРёС‚Р°");
+                System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ!\n");
             }
         } while (answer != ch);
     }

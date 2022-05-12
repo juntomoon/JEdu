@@ -1,38 +1,38 @@
 package javaeducation;
 
-// Многоуровневая иерархия
+// РњРЅРѕРіРѕСѓСЂРѕРІРЅРµРІР°СЏ РёРµСЂР°СЂС…РёСЏ
 abstract  class TwoDShape {
     private double width;
     private double height;
     private String name;
 
-    // Конструктор по умолчанию
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
     TwoDShape() {
         width = height = 0.0;
         name = "none";
     }
 
-    // Параметризованный конструктор
+    // РџР°СЂР°РјРµС‚СЂРёР·РѕРІР°РЅРЅС‹Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     TwoDShape(double w, double h, String n) {
         width = w;
         height = h;
         name = n;
     }
 
-    // Создание объекта с одинаковыми значениями
-    // переменных экземпляра width и height
+    // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° СЃ РѕРґРёРЅР°РєРѕРІС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
+    // РїРµСЂРµРјРµРЅРЅС‹С… СЌРєР·РµРјРїР»СЏСЂР° width Рё height
     TwoDShape(double x,String n) {
         width = height = x;
         name = n;
     }
-    // Создание одного объекта на основе другого
+    // РЎРѕР·РґР°РЅРёРµ РѕРґРЅРѕРіРѕ РѕР±СЉРµРєС‚Р° РЅР° РѕСЃРЅРѕРІРµ РґСЂСѓРіРѕРіРѕ
     TwoDShape(TwoDShape ob) {
         width = ob.width;
         height = ob.height;
         name = ob.name;
     }
 
-    // Методы доступа к переменным экземпляра width и height
+    // РњРµС‚РѕРґС‹ РґРѕСЃС‚СѓРїР° Рє РїРµСЂРµРјРµРЅРЅС‹Рј СЌРєР·РµРјРїР»СЏСЂР° width Рё height
     double getWidth() {
         return width;
     }
@@ -54,33 +54,33 @@ abstract  class TwoDShape {
     }
 
     void showDim() {
-        System.out.println("Ширина и высота - " + width + " и " + height);
+        System.out.println("РЁРёСЂРёРЅР° Рё РІС‹СЃРѕС‚Р° - " + width + " Рё " + height);
     }
-    // Теперь метод area() абстрактный
+    // РўРµРїРµСЂСЊ РјРµС‚РѕРґ area() Р°Р±СЃС‚СЂР°РєС‚РЅС‹Р№
     abstract double area();
 }
-// Расширение класса TwoDShape
+// Р Р°СЃС€РёСЂРµРЅРёРµ РєР»Р°СЃСЃР° TwoDShape
     class Triangle extends TwoDShape{
         private String style;
 
-        // Конструктор по умолчанию
+        // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
         Triangle() {
             super();
             style = "none";
         }
-        // Конструктор класса Triangle
+        // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Triangle
         Triangle(String s, double w, double h) {
-            super(w, h,"треугольник"); // вызов конструктора суперкласса
+            super(w, h,"С‚СЂРµСѓРіРѕР»СЊРЅРёРє"); // РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР°
             style = s;
         }
-        // Конструктор с одним аргументом для построения треугольника
+        // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РѕРґРЅРёРј Р°СЂРіСѓРјРµРЅС‚РѕРј РґР»СЏ РїРѕСЃС‚СЂРѕРµРЅРёСЏ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
         Triangle(double x) {
-            super(x, "треугольник"); // вызов конструктора суперкласса
+            super(x, "С‚СЂРµСѓРіРѕР»СЊРЅРёРє"); // РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР°
 
-            style = "закрашенный";
+            style = "Р·Р°РєСЂР°С€РµРЅРЅС‹Р№";
         }
 
-        // Создание одного объекта на основе другого
+        // РЎРѕР·РґР°РЅРёРµ РѕРґРЅРѕРіРѕ РѕР±СЉРµРєС‚Р° РЅР° РѕСЃРЅРѕРІРµ РґСЂСѓРіРѕРіРѕ
         Triangle(Triangle ob) {
             super(ob);
             style = ob.style;
@@ -89,30 +89,30 @@ abstract  class TwoDShape {
             return getWidth() * getHeight() / 2;
         }
         void showStyle() {
-            System.out.println("Треугольник " + style );
+            System.out.println("РўСЂРµСѓРіРѕР»СЊРЅРёРє " + style );
         }
     }
-    // Подкласс для представления прямоугольников,
-    // производный от класса TwoDShape
+    // РџРѕРґРєР»Р°СЃСЃ РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ,
+    // РїСЂРѕРёР·РІРѕРґРЅС‹Р№ РѕС‚ РєР»Р°СЃСЃР° TwoDShape
     class Rectangle extends TwoDShape {
-        // Конструктор по умолчанию
+        // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
         Rectangle() {
             super();
         }
 
-        // Конструктор класса Rectangle
+        // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР° Rectangle
         Rectangle(double w, double h) {
-            super(w, h, "прямоугольник"); // вызов конструктора суперкласса
+            super(w, h, "РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє"); // РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР°
         }
 
-        // Создание квадрата
+        // РЎРѕР·РґР°РЅРёРµ РєРІР°РґСЂР°С‚Р°
         Rectangle(double x) {
-            super(x, "прямоугольник"); // вызов конструктора суперкласса
+            super(x, "РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє"); // РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° СЃСѓРїРµСЂРєР»Р°СЃСЃР°
         }
 
-        // Создание одного объекта на основе другого
+        // РЎРѕР·РґР°РЅРёРµ РѕРґРЅРѕРіРѕ РѕР±СЉРµРєС‚Р° РЅР° РѕСЃРЅРѕРІРµ РґСЂСѓРіРѕРіРѕ
         Rectangle(Rectangle ob) {
-            super(ob); // Передача объекта конструктору класса TwoDShape
+            super(ob); // РџРµСЂРµРґР°С‡Р° РѕР±СЉРµРєС‚Р° РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂСѓ РєР»Р°СЃСЃР° TwoDShape
         }
 
         boolean isSqure() {
@@ -120,7 +120,7 @@ abstract  class TwoDShape {
             return false;
         }
 
-        // Переопределение метода area() для класса Rectangle
+        // РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРёРµ РјРµС‚РѕРґР° area() РґР»СЏ РєР»Р°СЃСЃР° Rectangle
         double area() {
             return getWidth() * getHeight();
         }
@@ -129,14 +129,14 @@ abstract  class TwoDShape {
       public static void main(String[] args) {
           TwoDShape [] shapes = new TwoDShape[4];
 
-          shapes[0] = new Triangle("контурный", 8.0,12.0);
+          shapes[0] = new Triangle("РєРѕРЅС‚СѓСЂРЅС‹Р№", 8.0,12.0);
           shapes[1] = new Rectangle(10);
           shapes[2] = new Rectangle(10,4);
           shapes[3] = new Triangle(7.0);
 
           for (int i = 0; i < shapes.length; i++) {
-              System.out.println("Объект - " + shapes[i].getName());
-              System.out.println("Площадь - " + shapes[i].area());
+              System.out.println("РћР±СЉРµРєС‚ - " + shapes[i].getName());
+              System.out.println("РџР»РѕС‰Р°РґСЊ - " + shapes[i].area());
               System.out.println();
           }
       }

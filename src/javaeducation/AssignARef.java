@@ -14,28 +14,28 @@ public class AssignARef {
         for (i = 0; i < 10; i++)
             nums2[i] = -i;
 
-        System.out.print("Ìàññèâ nums1: ");
+        System.out.print("ÐœÐ°ÑÑÐ¸Ð² nums1: ");
         for (i = 0; i < 10; i++)
             System.out.print(nums1[i] + " ");
         System.out.println();
 
-        System.out.print("Ìàññèâ nums2: ");
+        System.out.print("ÐœÐ°ÑÑÐ¸Ð² nums2: ");
         for (i = 0; i < 10; i++)
             System.out.print(nums2[i] + " ");
         System.out.println();
 
-        nums2 = nums1;  //òåïåðü îáå ïåðåìåííûå ññûëàþòñÿ
-        // íà ìàññèâ nums1
-        System.out.print("Ìàññèâ nums2 ïîñëå ïðèñâàèâàíèÿ: ");
+        nums2 = nums1;  //Ñ‚ÐµÐ¿ÐµÑ€ÑŒ Ð¾Ð±Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ ÑÑÑ‹Ð»Ð°ÑŽÑ‚ÑÑ
+        // Ð½Ð° Ð¼Ð°ÑÑÐ¸Ð² nums1
+        System.out.print("ÐœÐ°ÑÑÐ¸Ð² nums2 Ð¿Ð¾ÑÐ»Ðµ Ð¿Ñ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°Ð½Ð¸Ñ: ");
         for (i = 0; i < 10; i++)
             System.out.print(nums2[i] + " ");
         System.out.println();
 
-        //Âûïîëíåíèå îïåðàöèé íàä ìàññèâîì nums1
-        //×åðåç ïåðåìåííóþ nums2
+        //Ð’Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¹ Ð½Ð°Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð¾Ð¼ nums1
+        //Ð§ÐµÑ€ÐµÐ· Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ nums2
         nums2[3] = 99;
 
-        System.out.print("Ìàññèâ nums1 ïîñëå èçìåíåíèÿ ÷åðåç nums2: ");
+        System.out.print("ÐœÐ°ÑÑÐ¸Ð² nums1 Ð¿Ð¾ÑÐ»Ðµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ñ‡ÐµÑ€ÐµÐ· nums2: ");
         for (i = 0; i < 10; i++)
             System.out.print(nums1[i] + " ");
         System.out.println();

@@ -7,10 +7,10 @@ public class KbIn {
 
 	    char ch;
 
-            System.out.print("Нажмите нужную клавишу, а затем клавишу ENTER: ");
+            System.out.print("РќР°Р¶РјРёС‚Рµ РЅСѓР¶РЅСѓСЋ РєР»Р°РІРёС€Сѓ, Р° Р·Р°С‚РµРј РєР»Р°РІРёС€Сѓ ENTER: ");
 
-            ch = (char) System.in.read(); // Получить символ с клавиатуры
+            ch = (char) System.in.read(); // РџРѕР»СѓС‡РёС‚СЊ СЃРёРјРІРѕР» СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
 
-            System.out.println("Вы нажали клавишу " + ch);
+            System.out.println("Р’С‹ РЅР°Р¶Р°Р»Рё РєР»Р°РІРёС€Сѓ " + ch);
         }
     }
