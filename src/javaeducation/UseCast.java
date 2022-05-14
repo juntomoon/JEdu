@@ -7,7 +7,7 @@ class UseCast {
         for (i = 0; i < 5; i++)
         {
             System.out.println(i + " / 3: " + i / 3);
-            System.out.println(i + " / 3 с дробной частью: " +
+            System.out.println(i + " / 3 СЃ РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚СЊСЋ: " +
                     (double) i / 3);
             System.out.println();
 

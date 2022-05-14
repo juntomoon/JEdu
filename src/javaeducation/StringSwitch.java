@@ -7,16 +7,16 @@ public class StringSwitch {
 
         switch (command) {
             case "connect":
-                System.out.println("Подключение");
+                System.out.println("РџРѕРґРєР»СЋС‡РµРЅРёРµ");
                 break;
             case "cancel":
-                System.out.println("Отмена");
+                System.out.println("РћС‚РјРµРЅР°");
                 break;
             case "disconnect":
-                System.out.println("Отключение");
+                System.out.println("РћС‚РєР»СЋС‡РµРЅРёРµ");
                 break;
             default:
-                System.out.println("Неверная команда");
+                System.out.println("РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
                 break;
             }
     }

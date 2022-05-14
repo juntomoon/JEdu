@@ -11,15 +11,15 @@ class CastDemo {
 	y = 3.0;
 
 	i = (int) (x / y);
-        System.out.println("Целочисленный результат деления x / y : " + i);
+        System.out.println("Р¦РµР»РѕС‡РёСЃР»РµРЅРЅС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ РґРµР»РµРЅРёСЏ x / y : " + i);
 
     i = 100;
     b = (byte) i;
-        System.out.println("Значение b: " + b);
+        System.out.println("Р—РЅР°С‡РµРЅРёРµ b: " + b);
 
     i = 257;
     b = (byte) i;
-        System.out.println("Значение b: " + b);
+        System.out.println("Р—РЅР°С‡РµРЅРёРµ b: " + b);
 
     b = 88;
     ch = (char) b;

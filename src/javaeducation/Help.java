@@ -1,6 +1,6 @@
 package javaeducation;
 /*
-Простая справочная система.
+РџСЂРѕСЃС‚Р°СЏ СЃРїСЂР°РІРѕС‡РЅР°СЏ СЃРёСЃС‚РµРјР°.
 
  */
 class Helppp {
@@ -8,32 +8,32 @@ class Helppp {
     public static void main(String[] args)
         throws java.io.IOException{
 
-        char choise; //выбор
+        char choise; //РІС‹Р±РѕСЂ
 
-        System.out.println("Справка:");
+        System.out.println("РЎРїСЂР°РІРєР°:");
         System.out.println("  1. if");
         System.out.println(" 2. switch");
-        System.out.print("Выберите:  ");
+        System.out.print("Р’С‹Р±РµСЂРёС‚Рµ:  ");
         choise = (char) System.in.read();
 
         System.out.println("\n");
 
         switch (choise) {
             case '1' :
-                System.out.println("Иниструкция if:\n");
-                System.out.println("if(условие) инструкция;");
-                System.out.println("else инструкция;");
+                System.out.println("РРЅРёСЃС‚СЂСѓРєС†РёСЏ if:\n");
+                System.out.println("if(СѓСЃР»РѕРІРёРµ) РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
+                System.out.println("else РёРЅСЃС‚СЂСѓРєС†РёСЏ;");
                 break;
             case '2':
-                System.out.println("Инструкция switch:\n");
-                System.out.println("switch(выражение) {");
-                System.out.println(" case константа:");
-                System.out.println("   последовательность инструкций");
+                System.out.println("РРЅСЃС‚СЂСѓРєС†РёСЏ switch:\n");
+                System.out.println("switch(РІС‹СЂР°Р¶РµРЅРёРµ) {");
+                System.out.println(" case РєРѕРЅСЃС‚Р°РЅС‚Р°:");
+                System.out.println("   РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РёРЅСЃС‚СЂСѓРєС†РёР№");
                 System.out.println("  //...");
                 System.out.println("}");
                 break;
             default:
-                System.out.print("Запрос не найден.");
+                System.out.print("Р—Р°РїСЂРѕСЃ РЅРµ РЅР°Р№РґРµРЅ.");
         }
     }
 }

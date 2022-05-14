@@ -7,16 +7,16 @@ class Guess {
 
         char ch, answer = 'B';
 
-        System.out.println("Задумана буква из диапазона A-Z.");
-        System.out.print("Попытайтесь ее угадать: ");
+        System.out.println("Р—Р°РґСѓРјР°РЅР° Р±СѓРєРІР° РёР· РґРёР°РїР°Р·РѕРЅР° A-Z.");
+        System.out.print("РџРѕРїС‹С‚Р°Р№С‚РµСЃСЊ РµРµ СѓРіР°РґР°С‚СЊ: ");
 
-        ch = (char) System.in.read(); // чтение символа с клавиатуры
+        ch = (char) System.in.read(); // С‡С‚РµРЅРёРµ СЃРёРјРІРѕР»Р° СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
 
-        if (ch == answer) System.out.println("** Правильно! **");
-        else System.out.print("....Извините, нужная буква находится");
-             // вложенная инструкция if
-            if (ch < answer) System.out.print(" ближе к концу алфавита");
+        if (ch == answer) System.out.println("** РџСЂР°РІРёР»СЊРЅРѕ! **");
+        else System.out.print("....РР·РІРёРЅРёС‚Рµ, РЅСѓР¶РЅР°СЏ Р±СѓРєРІР° РЅР°С…РѕРґРёС‚СЃСЏ");
+             // РІР»РѕР¶РµРЅРЅР°СЏ РёРЅСЃС‚СЂСѓРєС†РёСЏ if
+            if (ch < answer) System.out.print(" Р±Р»РёР¶Рµ Рє РєРѕРЅС†Сѓ Р°Р»С„Р°РІРёС‚Р°");
             else if (ch == answer) System.out.print("");
-            else System.out.print(" ближе к началу алфавита");
+            else System.out.print(" Р±Р»РёР¶Рµ Рє РЅР°С‡Р°Р»Сѓ Р°Р»С„Р°РІРёС‚Р°");
     }
 }

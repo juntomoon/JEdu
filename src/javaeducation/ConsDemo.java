@@ -1,5 +1,5 @@
 package javaeducation;
-// Простой конструктор
+// РџСЂРѕСЃС‚РѕР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
 class Myclass3 {
     int x;

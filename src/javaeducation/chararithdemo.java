@@ -5,13 +5,13 @@ class chararithdemo {
         char ch;
 
         ch = 'X';
-        System.out.println("ch содержит " + ch);
+        System.out.println("ch СЃРѕРґРµСЂР¶РёС‚ " + ch);
 
-        ch++; //Инкрементировать переменную ch
-        System.out.println("Теперь ch содержит " +ch);
+        ch++; //РРЅРєСЂРµРјРµРЅС‚РёСЂРѕРІР°С‚СЊ РїРµСЂРµРјРµРЅРЅСѓСЋ ch
+        System.out.println("РўРµРїРµСЂСЊ ch СЃРѕРґРµСЂР¶РёС‚ " +ch);
 
-        ch = 90; // присвоить переменной ch значение 'Z'
-        System.out.println("теперь ch содержит " + ch);
+        ch = 90; // РїСЂРёСЃРІРѕРёС‚СЊ РїРµСЂРµРјРµРЅРЅРѕР№ ch Р·РЅР°С‡РµРЅРёРµ 'Z'
+        System.out.println("С‚РµРїРµСЂСЊ ch СЃРѕРґРµСЂР¶РёС‚ " + ch);
 
     }
 }

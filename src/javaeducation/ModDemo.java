@@ -12,7 +12,7 @@ class ModDemo {
 	dresult = 10.0 / 3.0;
 	drem = 10.0 % 3.0;
 
-        System.out.println("Результат и остаток от деления 10 / 3: " + iresult + "  " + irem);
-        System.out.println("Результат и остатот от деления 10.0 / 3.0:  " + dresult + "  " + drem);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ Рё РѕСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ 10 / 3: " + iresult + "  " + irem);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ Рё РѕСЃС‚Р°С‚РѕС‚ РѕС‚ РґРµР»РµРЅРёСЏ 10.0 / 3.0:  " + dresult + "  " + drem);
     }
 }
