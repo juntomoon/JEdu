@@ -11,4 +11,3 @@ public interface ICharQ {
     // Сброс очереди
     void reset();
 }
-
