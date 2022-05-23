@@ -16,7 +16,6 @@ public class ACopy {
                 nums2[i] = nums1[i];
             for(i=0; i < nums2.length; i++)
                 System.out.print(nums2[i] + "  ");
-        System.out.println("Test");
     }
 
 }
