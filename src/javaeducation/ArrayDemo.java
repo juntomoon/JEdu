@@ -8,11 +8,10 @@ public class ArrayDemo {
         for (i = 0; i < 10; i++)
             sample[i] = i;
         for (i = 0; i < 10; i++)
-        System.out.println("Элемент [" + i + "] : " + sample[i] );
-
+            System.out.println("Элемент [" + i + "] : " + sample[i]);
 
 
     }
 
-    }
+}
 
