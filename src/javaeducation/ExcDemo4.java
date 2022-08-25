@@ -1,6 +1,6 @@
 package javaeducation;
 // Применение нескольких инструкций catch
-class ExcDemo4 {
+class  ExcDemo4 {
     public static void main(String[] args) {
         // Длина массива numer превышает длину массива denom
         int[] numer = {4, 8, 16, 32, 64, 128, 256, 512};
