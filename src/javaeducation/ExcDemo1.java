@@ -1,5 +1,6 @@
 package javaeducation;
-public class ExcDemo1 {
+// Демонстрация обработки исключений
+class ExcDemo1 {
     public static void main(String[] args){
         int[] nums = new int[4];
 
