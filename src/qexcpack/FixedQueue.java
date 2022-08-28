@@ -19,6 +19,7 @@ public class FixedQueue implements ICharQQ{
     }
     // Извлечение символа из очереди
     public char get() throws QueueEmptyException {
+
         if(getloc == putloc)
             throw new QueueEmptyException();
 
